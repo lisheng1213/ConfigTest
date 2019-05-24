@@ -1,0 +1,32 @@
+zuul:
+ routes:
+  api-a:
+   path: /api-a/**
+   serviceId: eureka-ribbon
+  eureka-feign: /eureka-feign/** 
+ ignored-services: "*"  
+ ThrowExceptionFilter:
+  pre:
+   disable: true
+ host:
+  socket-timeout-millis: 90000
+  connect-timeout-millis: 90000
+ 
+hystrix:
+ command:
+  default:
+   execution:
+    isolation:
+     thread:
+      timeoutInMilliseconds: 80000
+ribbon:
+ ReadTimeout: 10000
+ ConnectTimeout: 20000
+
+
+
+
+
+
+
+   
