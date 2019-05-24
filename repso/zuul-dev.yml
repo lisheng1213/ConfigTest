@@ -3,7 +3,7 @@ zuul:
   api-a:
    path: /api-a/**
    serviceId: eureka-ribbon
-  eureka-feign: /eureka-feign/** 
+  eureka-feign: /eureka-f/** 
  ignored-services: "*"  
  ThrowExceptionFilter:
   pre:
@@ -20,7 +20,7 @@ hystrix:
      thread:
       timeoutInMilliseconds: 80000
 ribbon:
- ReadTimeout: 10000
+ ReadTimeout: 20000
  ConnectTimeout: 20000
 
 
