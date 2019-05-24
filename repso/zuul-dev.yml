@@ -3,7 +3,7 @@ zuul:
   api-a:
    path: /api-a/**
    serviceId: eureka-ribbon
-  eureka-feign: /eureka-feign/** 
+  eureka-feign: /eureka-f/** 
  ignored-services: "*"  
  ThrowExceptionFilter:
   pre:
