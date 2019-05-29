@@ -9,7 +9,7 @@ spring:
    - id: feign
      uri: lb://eureka-feign
      predicates:
-     - Path=/eureka-feign/**
+     - Path=/eureka-f/**
      filters:
      - StripPrefix=1 
 
