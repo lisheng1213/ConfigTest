@@ -1,11 +1,9 @@
 spring:
- application:
-  name: eureka-gateway
  cloud:
   gateway:
    discovery:
     locator: 
-     enabled: true
+     enabled: false
      lowerCaseServiceId: true
    routes:
    - id: feign
@@ -15,9 +13,5 @@ spring:
      filters:
      - StripPrefix=1 
 
-eureka:
- client:
-  serviceUrl:
-   defaultZone: http://localhost:8761/eureka/
  
 
